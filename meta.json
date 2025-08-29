@@ -2,13 +2,13 @@
   "$schema": "https://dl.viam.dev/module.schema.json",
   "module_id": "cdp:online-status",
   "visibility": "private",
-  "url": "",
-  "description": "Modular sensor component: online-status",
+  "url": "https://github.com/clintpurser/online-status",
+  "description": "Viam Sensor module that returns online status of the machine.",
   "models": [
     {
       "api": "rdk:component:sensor",
       "model": "cdp:online-status:online-status",
-      "short_description": "Provide a short (100 characters or less) description of this model here",
+      "short_description": "Monitors the reachability of https://app.viam.com, returns 1 if online (200 OK), 0 otherwise.",
       "markdown_link": "README.md#model-cdponline-statusonline-status"
     }
   ],
