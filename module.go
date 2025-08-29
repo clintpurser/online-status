@@ -2,7 +2,6 @@ package onlinestatus
 
 import (
 	"context"
-	"errors"
 	"fmt"
 	"net/http"
 	"time"
@@ -13,8 +12,7 @@ import (
 )
 
 var (
-	OnlineStatus     = resource.NewModel("cdp", "online-status", "online-status")
-	errUnimplemented = errors.New("unimplemented")
+	OnlineStatus = resource.NewModel("cdp", "online-status", "online-status")
 )
 
 func init() {
