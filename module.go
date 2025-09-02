@@ -17,7 +17,7 @@ var (
 
 func init() {
 	resource.RegisterComponent(sensor.API, OnlineStatus,
-		resource.Registration[sensor.Sensor, *Config]{
+		resource.Registration[sensor.Sensor, resource.NoNativeConfig]{
 			Constructor: newOnlineStatusOnlineStatus,
 		},
 	)
